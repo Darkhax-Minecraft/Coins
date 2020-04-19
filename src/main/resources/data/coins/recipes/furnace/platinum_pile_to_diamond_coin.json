@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "coins:coin_pile_platinum"
+  },
+  "result": "coins:coin_diamond",
+  "experience": 0.7,
+  "cookingtime": 200
+}

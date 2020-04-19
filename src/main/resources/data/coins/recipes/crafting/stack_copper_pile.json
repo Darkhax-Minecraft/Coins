@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "coin_pile",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "coins:coin_copper"
+    }
+  },
+  "result": {
+    "item": "coins:coin_pile_copper"
+  }
+}

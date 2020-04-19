@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "coins:coin_pile_copper"
+  },
+  "result": "coins:coin_iron",
+  "experience": 0.7,
+  "cookingtime": 100
+}
