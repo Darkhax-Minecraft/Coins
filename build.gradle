@@ -80,7 +80,7 @@ dependencies {
 
     minecraft "net.minecraftforge:forge:${forge_version}"
     
-    compile fg.deobf("net.darkhax.bookshelf:Bookshelf-1.15.2:${bookshelf_version}")
+    compile fg.deobf("net.darkhax.bookshelf:Bookshelf-${minecraft_version}:${bookshelf_version}")
 }
 
 jar {
