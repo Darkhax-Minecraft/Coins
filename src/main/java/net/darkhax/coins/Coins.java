@@ -33,7 +33,8 @@ public class Coins {
         this.tabIconItem = this.createSimpleItem("coin_pile_gold");
         this.createSimpleItem("coin_pile_platinum");
         this.createSimpleItem("coin_pile_diamond");
-        
+
+        /*
         this.registry.injectTable(LootTables.CHESTS_PILLAGER_OUTPOST);
         this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_ARMORER);
         this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_BUTCHER);
@@ -52,7 +53,8 @@ public class Coins {
         this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_TEMPLE);
         this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_TOOLSMITH);
         this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_WEAPONSMITH);
-        
+         */
+
         this.registry.initialize(FMLJavaModLoadingContext.get().getModEventBus());
     }
     
