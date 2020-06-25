@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    {
+      "item": "coins:coin_pile_platinum"
+    }
+  ],
+  "result": {
+    "item": "coins:coin_platinum",
+    "count": 9
+  }
+}
