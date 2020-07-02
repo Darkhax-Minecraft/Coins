@@ -8,7 +8,7 @@ import net.darkhax.bookshelf.registry.RegistryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Properties;
 import net.minecraft.item.ItemStack;
-import net.minecraft.world.storage.loot.LootTables;
+import net.minecraft.loot.LootTables;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
