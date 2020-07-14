@@ -4,6 +4,7 @@ issueTrackerURL="https://github.com/Darkhax-Minecraft/coins/issues"
 
 [[mods]]
 modId="coins"
+updateJSONURL="https://updates.blamejared.com/get?n=coins&gv=1.16.1"
 version="${version}"
 displayName="${mod_name}"
 displayURL="${mod_download}"
