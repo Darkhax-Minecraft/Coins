@@ -8,7 +8,6 @@ import net.darkhax.bookshelf.registry.RegistryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Properties;
 import net.minecraft.item.ItemStack;
-import net.minecraft.world.storage.loot.LootTables;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -16,7 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class Coins {
     
     private final Logger log = LogManager.getLogger("Coins");
-    private final RegistryHelper registry = new RegistryHelper("coins", this.log, new ItemGroupBase("coins", this::createTabIcon));
+    private final RegistryHelper registry = new RegistryHelper("coins", this.log).withItemGroup(new ItemGroupBase("coins", this::createTabIcon));
     
     private final Item tabIconItem;
     
@@ -34,31 +33,12 @@ public class Coins {
         this.createSimpleItem("coin_pile_platinum");
         this.createSimpleItem("coin_pile_diamond");
         
-        this.registry.injectTable(LootTables.CHESTS_PILLAGER_OUTPOST);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_ARMORER);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_BUTCHER);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_CARTOGRAPHER);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_DESERT_HOUSE);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_FISHER);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_FLETCHER);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_MASON);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_PLAINS_HOUSE);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_SAVANNA_HOUSE);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_SHEPHERD);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_SHEPHERD);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_SNOWY_HOUSE);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_TAIGA_HOUSE);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_TANNERY);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_TEMPLE);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_TOOLSMITH);
-        this.registry.injectTable(LootTables.CHESTS_VILLAGE_VILLAGE_WEAPONSMITH);
-        
         this.registry.initialize(FMLJavaModLoadingContext.get().getModEventBus());
     }
     
     private Item createSimpleItem (String id) {
         
-        return this.registry.registerItem(new Item(new Properties()), id);
+        return this.registry.items.register(new Item(new Properties()), id);
     }
     
     private final ItemStack createTabIcon () {
