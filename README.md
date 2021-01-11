@@ -1,0 +1,3 @@
+# Coins [![](http://cf.way2muchnoise.eu/377056.svg)](https://minecraft.curseforge.com/projects/coins-je) [![](http://cf.way2muchnoise.eu/versions/377056.svg)](https://minecraft.curseforge.com/projects/coins-je)
+
+This mod adds several types of coins which can be used for decoraton, quest, role play, and economy systems. There are five tiers of coins. Players can get gold and iron coins by smelting gold and iron ingots in a furnace. This will give you one coin of the respective tier.
