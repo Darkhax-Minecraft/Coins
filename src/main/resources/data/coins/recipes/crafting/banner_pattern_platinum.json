@@ -1,0 +1,17 @@
+{
+  "type": "bookshelf:crafting_shapeless_with_damage",
+  "ingredients": [
+    {
+	  "type": "bookshelf:any_shear"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+	{
+	  "item": "coins:coin_pile_platinum"
+	}
+  ],
+  "result": {
+    "item": "coins:pile_platinum_banner_pattern"
+  }
+}

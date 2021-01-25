@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+	{
+	  "tag": "coins:coin_banner_pattern"
+	}
+  ],
+  "result": {
+    "item": "coins:pile_grayscale_banner_pattern"
+  }
+}

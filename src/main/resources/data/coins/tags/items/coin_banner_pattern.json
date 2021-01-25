@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "coins:pile_copper_banner_pattern",
+    "coins:pile_iron_banner_pattern",
+    "coins:pile_gold_banner_pattern",
+    "coins:pile_platinum_banner_pattern",
+    "coins:pile_diamond_banner_pattern"
+  ]
+}
