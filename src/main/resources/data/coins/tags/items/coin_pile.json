@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "coins:coin_pile_copper",
+    "coins:coin_pile_iron",
+    "coins:coin_pile_gold",
+    "coins:coin_pile_platinum",
+    "coins:coin_pile_diamond"
+  ]
+}
