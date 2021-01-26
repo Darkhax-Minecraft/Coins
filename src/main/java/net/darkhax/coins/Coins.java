@@ -8,10 +8,9 @@ import net.darkhax.bookshelf.registry.RegistryHelper;
 import net.minecraft.item.BannerPatternItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Properties;
-import net.minecraft.tileentity.BannerPattern;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Rarity;
+import net.minecraft.tileentity.BannerPattern;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
