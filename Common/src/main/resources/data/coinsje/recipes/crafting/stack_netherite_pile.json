@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "coin_pile",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "coinsje:netherite_coin"
+    }
+  },
+  "result": {
+    "item": "coinsje:netherite_coin_pile"
+  }
+}

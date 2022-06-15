@@ -1,0 +1,15 @@
+{
+  "itemGroup.coinsje.creative_tab": "Coins",
+  
+  "item.coinsje.copper_coin": "Copper Coin",
+  "item.coinsje.iron_coin": "Iron Coin",
+  "item.coinsje.gold_coin": "Gold Coin",
+  "item.coinsje.netherite_coin": "Netherite Coin",
+  "item.coinsje.diamond_coin": "Diamond Coin",
+  
+  "item.coinsje.copper_coin_pile": "Copper Coin Pile",
+  "item.coinsje.iron_coin_pile": "Iron Coin Pile",
+  "item.coinsje.gold_coin_pile": "Gold Coin Pile",
+  "item.coinsje.netherite_coin_pile": "Netherite Coin Pile",
+  "item.coinsje.diamond_coin_pile": "Diamond Coin Pile"
+}
