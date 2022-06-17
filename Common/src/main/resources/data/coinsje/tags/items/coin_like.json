@@ -1,0 +1,8 @@
+{
+  "__comment": "This tag is for any coin-like item added by the mod.",
+  "replace": false,
+  "values": [
+    "#coinsje:coins",
+    "#coinsje:coin_piles"
+  ]
+}

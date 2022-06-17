@@ -1,0 +1,17 @@
+{
+  "type": "bookshelf:shapeless_durability",
+  "ingredients": [
+    {
+      "tag": "bookshelf:shears"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "tag": "coinsje:coin_like"
+    }
+  ],
+  "result": {
+    "item": "coinsje:coin_pattern"
+  }
+}

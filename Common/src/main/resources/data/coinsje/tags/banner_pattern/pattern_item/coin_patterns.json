@@ -1,0 +1,12 @@
+{
+  "__comment": "This tag is for patterns available using the stencil item.",
+  "replace": false,
+  "values": [
+    "coinsje:copper_coin_pile",
+    "coinsje:iron_coin_pile",
+    "coinsje:gold_coin_pile",
+    "coinsje:diamond_coin_pile",
+    "coinsje:netherite_coin_pile",
+    "coinsje:greyscale_coin_pile"
+  ]
+}

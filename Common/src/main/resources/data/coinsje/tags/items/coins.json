@@ -1,0 +1,11 @@
+{
+  "__comment": "This tag is for individual coin items.",
+  "replace": false,
+  "values": [
+    "coinsje:copper_coin",
+    "coinsje:iron_coin",
+    "coinsje:gold_coin",
+    "coinsje:diamond_coin",
+    "coinsje:netherite_coin"
+  ]
+}

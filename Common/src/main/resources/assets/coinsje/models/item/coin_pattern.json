@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "coinsje:item/coin_banner_pattern"
+  }
+}
