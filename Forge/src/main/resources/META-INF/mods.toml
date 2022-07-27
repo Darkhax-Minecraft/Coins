@@ -8,6 +8,7 @@ modId = "${mod_id}"
 version = "${file.jarVersion}"
 displayName = "${mod_name}"
 displayURL = "${mod_homepage}"
+updateJSONURL="https://updates.blamejared.com/get?n=${mod_id}&gv=${minecraft_version}"
 credits = "This project is made possible with Patreon support from players like you. Thank you! ${mod_supporters}"
 authors = "${mod_author}"
 description = '''
@@ -18,13 +19,13 @@ itemIcon = "coinsje:gold_coin_pile"
 [[dependencies.${ mod_id }]]
 modId = "bookshelf"
 mandatory = true
-versionRange = "[14.1.7,)"
+versionRange = "[14.2.10,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${ mod_id }]]
 modId = "forge"
 mandatory = true
-versionRange = "[41.0.94,)"
+versionRange = "[41.1.0,)"
 ordering = "NONE"
 side = "BOTH"
