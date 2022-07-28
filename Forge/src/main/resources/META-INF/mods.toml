@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[41,)"
+loaderVersion = "[42,)"
 license = "${mod_license}"
 issueTrackerURL = "${mod_issues}"
 
@@ -19,13 +19,13 @@ itemIcon = "coinsje:gold_coin_pile"
 [[dependencies.${ mod_id }]]
 modId = "bookshelf"
 mandatory = true
-versionRange = "[14.2.10,)"
+versionRange = "[15,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${ mod_id }]]
 modId = "forge"
 mandatory = true
-versionRange = "[41.1.0,)"
+versionRange = "[42,)"
 ordering = "NONE"
 side = "BOTH"
