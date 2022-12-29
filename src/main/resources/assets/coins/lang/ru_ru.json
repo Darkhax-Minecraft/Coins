@@ -1,0 +1,15 @@
+{
+  "itemGroup.coins": "Монеты",
+  
+  "item.coins.coin_copper": "Медная монета",
+  "item.coins.coin_iron": "Железная монета",
+  "item.coins.coin_gold": "Золотая монета",
+  "item.coins.coin_platinum": "Платиновая монета",
+  "item.coins.coin_diamond": "Алмазная монета",
+  
+  "item.coins.coin_pile_copper": "Горсть медных монет",
+  "item.coins.coin_pile_iron": "Горсть железных монет",
+  "item.coins.coin_pile_gold": "Горсть золотых монет",
+  "item.coins.coin_pile_platinum": "Горсть платиновых монет",
+  "item.coins.coin_pile_diamond": "Горсть алмазных монет"
+}
