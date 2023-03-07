@@ -3,6 +3,8 @@ package net.darkhax.coins;
 import net.darkhax.bookshelf.api.Services;
 import net.darkhax.bookshelf.api.function.CachedSupplier;
 import net.darkhax.bookshelf.api.registry.RegistryDataProvider;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.BannerPatternItem;
@@ -25,7 +27,7 @@ public final class CoinsContent extends RegistryDataProvider {
 
         super(MOD_ID);
 
-        this.withCreativeTab(CachedSupplier.cache(() -> Services.REGISTRIES.items().get(new ResourceLocation(MOD_ID, "gold_coin_pile"))));
+        this.withItemTab(() -> BuiltInRegistries.ITEM.get(new ResourceLocation(MOD_ID, "gold_coin_pile")).getDefaultInstance());
 
         this.registerCoinTier("copper");
         this.registerCoinTier("iron");
