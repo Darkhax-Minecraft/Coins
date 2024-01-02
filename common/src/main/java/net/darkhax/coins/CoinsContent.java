@@ -16,7 +16,7 @@ public final class CoinsContent extends RegistryDataProvider {
 
     public static final String MOD_ID = "coinsje";
 
-    private final TagKey<BannerPattern> bannerTag = Services.TAGS.bannerPatternTag(new ResourceLocation(MOD_ID, "pattern_item/coin_patterns"));
+    private final TagKey<BannerPattern> bannerTag = TagKey.create(Registries.BANNER_PATTERN, new ResourceLocation(MOD_ID, "pattern_item/coin_patterns"));
 
     public static void init() {
 
