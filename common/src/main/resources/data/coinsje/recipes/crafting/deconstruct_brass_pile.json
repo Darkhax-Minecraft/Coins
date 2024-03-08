@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    {
+      "item": "coinsje:brass_coin_pile"
+    }
+  ],
+  "result": {
+    "item": "coinsje:brass_coin",
+    "count": 9
+  }
+}

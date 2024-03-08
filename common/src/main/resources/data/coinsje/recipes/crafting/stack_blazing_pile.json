@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "coin_pile",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "coinsje:blazing_coin"
+    }
+  },
+  "result": {
+    "item": "coinsje:blazing_coin_pile"
+  }
+}
