@@ -1,58 +1,41 @@
-# [Coins](https://minecraft.curseforge.com/projects/coins-je)
+<!-- name-start -->
+# Coins [![CurseForge Project](https://img.shields.io/curseforge/dt/377056?logo=curseforge&label=CurseForge&style=flat-square&labelColor=2D2D2D&color=555555)](https://www.curseforge.com/minecraft/mc-mods/coins-je) [![Modrinth Project](https://img.shields.io/modrinth/dt/b8aQgkOD?logo=modrinth&label=Modrinth&style=flat-square&labelColor=2D2D2D&color=555555)](https://modrinth.com/mod/coins-je) [![Maven Project](https://img.shields.io/maven-metadata/v?style=flat-square&logoColor=D31A38&labelColor=2D2D2D&color=555555&label=Latest&logo=gradle&metadataUrl=https%3A%2F%2Fmaven.blamejared.com%2Fnet%2Fdarkhax%2Fcoins%2Fcoinsje-common-1.21.1%2Fmaven-metadata.xml)](https://maven.blamejared.com/net/darkhax/coins)
+<!-- name-end -->
+<!-- description-start -->
+Adds new types of coins. The documentation for this mod can be found [here](https://docs.darkhax.net/mods/coins).
+<!-- description-end -->
 
-This mod adds several types of coins which can be used for decoraton, quest, role play, and economy systems. There are five tiers of coins. Players can get gold and iron coins by smelting gold and iron ingots in a furnace. This will give you one coin of the respective tier.
-
-## Coin Tiers
-![Coin Tiers](https://media.forgecdn.net/attachments/287/416/coin_tiers.png "The tiers of coins and how they convert.")
-
-## Coin Conversion Recipes
-![Coin Conversion Recipes](https://media.forgecdn.net/attachments/287/418/upcraft.gif "Conversion recipes for the types of coins.")
-
-## Coin Stack Recipes
-![Coin Stack Recipes](https://media.forgecdn.net/attachments/287/417/pile_craft.gif "Coin Stacking Recipes")
-
-## Banner Patterns
-Players can craft banner patterns using paper, shears, and a pile of coins. The banner will use the exact texture of the item when applied with white dye. This recipe will consume the coins item and damage the durability of the shears. Using other dye colors will work, but the color might not be what you expect. For vanilla-like colors you should use the generic pattern.
-![Banner Designs](https://media.forgecdn.net/attachments/336/11/banner_patterns.png "The copper, iron, gold, platinum, and diamond banners.")
-
-Additionally players can craft a generic version of the pattern by putting any non-generic coin pattern in the crafting table. The generic version has no predefined color palette and can be used to get different colors of the design which better resemble the vanilla wool/dye colors.
-![Generic Pattern](https://media.forgecdn.net/attachments/336/12/generic_pattern.png "Generic coin pattern in the 16 vanilla colors.") 
-
-### Why the Generic pattern?
-The specific coin tier patterns preserve the palette of the original item. This means that using a dye will combine that color with the original palette, creating new color options. For example diamond has a blueish palette, so using a yellow dye will make a green coin. These combinations can be fun however the generic pattern will allow for more traditional dye colors.
-
+<!-- maven-start -->
 ## Maven Dependency
-If you are using [Gradle](https://gradle.org) to manage your dependencies, add the following into your `build.gradle` file. Make sure to replace the version with the correct one. All versions can be viewed [here](https://maven.blamejared.com/net/darkhax/coins/).
-```
-repositories {
 
-    maven {
-    
+If you are using [Gradle](https://gradle.org) to manage your dependencies, add the following into your `build.gradle` file. Make sure to replace the version with the correct one. All versions can be viewed [here](https://maven.blamejared.com/net/darkhax/coins).
+
+```gradle
+repositories {
+    maven { 
         url 'https://maven.blamejared.com'
     }
 }
 
 dependencies {
+    // NeoForge
+    implementation group: 'net.darkhax.coins', name: 'coinsje-neoforge-1.21.1', version: '21.1.0'
 
-    // Example: compile "net.darkhax.coins:Coins-1.16.4:5.0.2"
-    compile "net.darkhax.coins:Coins-MCVERSION:PUT_FILE_VERSION_HERE"
+    // Forge
+    implementation group: 'net.darkhax.coins', name: 'coinsje-forge-1.21.1', version: '21.1.0'
+
+    // Fabric & Quilt
+    modImplementation group: 'net.darkhax.coins', name: 'coinsje-fabric-1.21.1', version: '21.1.0'
+
+    // Common / MultiLoader / Vanilla
+    compileOnly group: 'net.darkhax.coins', name: 'coinsje-common-1.21.1', version: '21.1.0'
 }
 ```
+<!-- maven-end -->
 
-## Jar Signing
-
-As of January 11th 2021 officially published builds will be signed. You can validate the integrity of these builds by comparing their signatures with the public fingerprints.
-
-| Hash   | Fingerprint                                                        |
-|--------|--------------------------------------------------------------------|
-| MD5    | `12F89108EF8DCC223D6723275E87208F`                                 |
-| SHA1   | `46D93AD2DC8ADED38A606D3C36A80CB33EFA69D1`                         |
-| SHA256 | `EBC4B1678BF90CDBDC4F01B18E6164394C10850BA6C4C748F0FA95F2CB083AE5` |
-
-
+<!-- sponsor-start -->
 ## Sponsors
-<img src="https://nodecraft.com/assets/images/logo-dark.png" width="384" height="90">
 
-This project is sponsored by Nodecraft. Use code [Darkhax](https://nodecraft.com/r/darkhax) for 30% off your first month of service!
-
-	
+[![](https://assets.blamejared.com/nodecraft/darkhax.jpg)](https://nodecraft.com/r/darkhax)    
+Coins is sponsored by Nodecraft. Use code **[DARKHAX](https://nodecraft.com/r/darkhax)** for 30% of your first month of service!
+<!-- sponsor-end -->

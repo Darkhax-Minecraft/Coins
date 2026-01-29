@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    {
+      "item": "coinsje:diamond_coin"
+    }
+  ],
+  "result": {
+    "id": "coinsje:gold_coin",
+    "count": 9
+  }
+}

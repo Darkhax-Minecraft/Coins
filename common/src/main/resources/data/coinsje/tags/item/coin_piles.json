@@ -1,0 +1,27 @@
+{
+  "__comment": "This tag is for coin stack items.",
+  "replace": false,
+  "values": [
+    "coinsje:copper_coin_pile",
+    "coinsje:iron_coin_pile",
+    "coinsje:gold_coin_pile",
+    "coinsje:diamond_coin_pile",
+    "coinsje:netherite_coin_pile",
+    "coinsje:copper_coin_pile",
+    "coinsje:iron_coin_pile",
+    "coinsje:gold_coin_pile",
+    "coinsje:diamond_coin_pile",
+    "coinsje:netherite_coin_pile",
+    "coinsje:zinc_coin_pile",
+    "coinsje:brass_coin_pile",
+    "coinsje:amethyst_coin_pile",
+    "coinsje:redstone_coin_pile",
+    "coinsje:lapis_coin_pile",
+    "coinsje:emerald_coin_pile",
+    "coinsje:ender_coin_pile",
+    "coinsje:blazing_coin_pile",
+    "coinsje:echo_coin_pile",
+    "coinsje:prismarine_coin_pile",
+    "coinsje:quartz_coin_pile"
+  ]
+}

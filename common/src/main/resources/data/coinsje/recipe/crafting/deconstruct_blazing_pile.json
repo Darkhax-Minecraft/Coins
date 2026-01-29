@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    {
+      "item": "coinsje:blazing_coin_pile"
+    }
+  ],
+  "result": {
+    "id": "coinsje:blazing_coin",
+    "count": 9
+  }
+}

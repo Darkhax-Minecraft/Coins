@@ -1,151 +1,61 @@
 package net.darkhax.coins;
 
-import net.darkhax.bookshelf.Constants;
-import net.darkhax.bookshelf.api.Services;
-import net.darkhax.bookshelf.api.function.CachedSupplier;
-import net.darkhax.bookshelf.api.registry.RegistryDataProvider;
+import net.darkhax.bookshelf.common.api.function.CachedSupplier;
+import net.darkhax.bookshelf.common.api.registry.ContentProvider;
+import net.darkhax.bookshelf.common.api.registry.adapters.GameRegistryAdapter;
+import net.darkhax.bookshelf.common.impl.registry.adapter.CreativeModeTabAdapter;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.BannerPatternItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.level.block.entity.BannerPattern;
-import org.apache.commons.lang3.StringUtils;
+import net.minecraft.world.item.ItemStack;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-
-public final class CoinsContent extends RegistryDataProvider {
+public final class CoinsContent implements ContentProvider {
 
     public static final String MOD_ID = "coinsje";
+    private static final CachedSupplier<ItemStack> TAB_ICON = CachedSupplier.cache(() -> BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(MOD_ID, "gold_coin_pile")).getDefaultInstance());
 
-    private final TagKey<BannerPattern> bannerTag = TagKey.create(Registries.BANNER_PATTERN, new ResourceLocation(MOD_ID, "pattern_item/coin_patterns"));
-
-    public static void init() {
-
-        Services.REGISTRIES.loadContent(new CoinsContent());
-    }
-
-    private CoinsContent() {
-
-        super(MOD_ID);
-
-        this.withItemTab(() -> BuiltInRegistries.ITEM.get(new ResourceLocation(MOD_ID, "gold_coin_pile")).getDefaultInstance());
-
-        this.registerCoinTier("copper");
-        this.registerCoinTier("iron");
-        this.registerCoinTier("gold");
-        this.registerCoinTier("diamond");
-        this.registerCoinTier("netherite");
-
-        this.items.add(() -> new BannerPatternItem(bannerTag, new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)), "coin_pattern");
-        this.bannerPatterns.add(() -> new BannerPattern(MOD_ID + "_greyscale_coin_pile"), "greyscale_coin_pile");
+    @Override
+    public void defineItems(GameRegistryAdapter<Item> registry) {
+        // Primary coin tiers
+        this.registerCoin(registry, "copper");
+        this.registerCoin(registry, "iron");
+        this.registerCoin(registry, "gold");
+        this.registerCoin(registry, "diamond");
+        this.registerCoin(registry, "netherite");
 
         // Alternative coins provided for users to customize
-        this.registerAltCoinTier("zinc");
-        this.registerAltCoinTier("brass");
-        this.registerAltCoinTier("amethyst");
-        this.registerAltCoinTier("redstone");
-        this.registerAltCoinTier("lapis");
-        this.registerAltCoinTier("emerald");
-        this.registerAltCoinTier("ender");
-        this.registerAltCoinTier("blazing");
-        this.registerAltCoinTier("echo");
-        this.registerAltCoinTier("prismarine");
-        this.registerAltCoinTier("quartz");
+        this.registerCoin(registry, "zinc");
+        this.registerCoin(registry, "brass");
+        this.registerCoin(registry, "amethyst");
+        this.registerCoin(registry, "redstone");
+        this.registerCoin(registry, "lapis");
+        this.registerCoin(registry, "emerald");
+        this.registerCoin(registry, "ender");
+        this.registerCoin(registry, "blazing");
+        this.registerCoin(registry, "echo");
+        this.registerCoin(registry, "prismarine");
+        this.registerCoin(registry, "quartz");
+
+        // Misc
+        registry.add("coin_pattern", new BannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(MOD_ID, "pattern_item/coin_patterns")), new Item.Properties().stacksTo(1)));
     }
 
-    private void registerCoinTier(String tierName) {
-
-        this.items.add(() -> new Item(new Item.Properties()), tierName + "_coin");
-        this.items.add(() -> new Item(new Item.Properties()), tierName + "_coin_pile");
-        this.bannerPatterns.add(() -> new BannerPattern(MOD_ID + "_" + tierName + "_coin_pile"), tierName + "_coin_pile");
+    private void registerCoin(GameRegistryAdapter<Item> registry, String tierName) {
+        registry.add(tierName + "_coin", new Item(new Item.Properties()));
+        registry.add(tierName + "_coin_pile", new Item(new Item.Properties()));
     }
 
-    private void registerAltCoinTier(String tierName) {
+    @Override
+    public void defineCreativeTabs(CreativeModeTabAdapter registry) {
+        registry.add("tab", TAB_ICON, (params, builder) -> {
+        });
+    }
 
-        this.items.add(() -> new Item(new Item.Properties()), tierName + "_coin");
-        this.items.add(() -> new Item(new Item.Properties()), tierName + "_coin_pile");
-
-        final File output = new File("output");
-        output.mkdir();
-
-        final File recipes = new File(output, "recipes");
-        recipes.mkdir();
-
-        try (FileWriter writer = new FileWriter(new File(recipes, "stack_" + tierName + "_pile.json"))) {
-            writer.append("{\n" +
-                    "  \"type\": \"minecraft:crafting_shaped\",\n" +
-                    "  \"group\": \"coin_pile\",\n" +
-                    "  \"pattern\": [\n" +
-                    "    \"XXX\",\n" +
-                    "    \"XXX\",\n" +
-                    "    \"XXX\"\n" +
-                    "  ],\n" +
-                    "  \"key\": {\n" +
-                    "    \"X\": {\n" +
-                    "      \"item\": \"coinsje:" + tierName + "_coin\"\n" +
-                    "    }\n" +
-                    "  },\n" +
-                    "  \"result\": {\n" +
-                    "    \"item\": \"coinsje:" + tierName + "_coin_pile\"\n" +
-                    "  }\n" +
-                    "}");
-        }
-        catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        try (FileWriter writer = new FileWriter(new File(recipes, "deconstruct_" + tierName + "_pile.json"))) {
-            writer.append("{\n" +
-                    "  \"type\": \"minecraft:crafting_shapeless\",\n" +
-                    "  \"group\": \"coins\",\n" +
-                    "  \"ingredients\": [\n" +
-                    "    {\n" +
-                    "      \"item\": \"coinsje:" + tierName + "_coin_pile\"\n" +
-                    "    }\n" +
-                    "  ],\n" +
-                    "  \"result\": {\n" +
-                    "    \"item\": \"coinsje:" + tierName + "_coin\",\n" +
-                    "    \"count\": 9\n" +
-                    "  }\n" +
-                    "}");
-        }
-        catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        final File models = new File(output, "models");
-        models.mkdir();
-
-        try (FileWriter writer = new FileWriter(new File(models, tierName + "_coin.json"))) {
-            writer.append("{\n" +
-                    "    \"parent\": \"item/generated\",\n" +
-                    "    \"textures\": {\n" +
-                    "        \"layer0\": \"coinsje:item/" + tierName + "_coin\"\n" +
-                    "    }\n" +
-                    "}");
-        }
-        catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        try (FileWriter writer = new FileWriter(new File(models, tierName + "_coin_pile.json"))) {
-            writer.append("{\n" +
-                    "    \"parent\": \"item/generated\",\n" +
-                    "    \"textures\": {\n" +
-                    "        \"layer0\": \"coinsje:item/"+ tierName + "_coin_pile\"\n" +
-                    "    }\n" +
-                    "}");
-        }
-        catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        Constants.LOG.info("  \"item.coinsje." + tierName + "_coin\": \""+ StringUtils.capitalize(tierName) + " Coin\",");
-        Constants.LOG.info("  \"item.coinsje." + tierName + "_coin_pile\": \""+ StringUtils.capitalize(tierName) + " Coin Pile\",");
+    @Override
+    public String namespace() {
+        return MOD_ID;
     }
 }

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "coinsje:iron_coin"
+  },
+  "experience": 0.7,
+  "cookingtime": 100
+}

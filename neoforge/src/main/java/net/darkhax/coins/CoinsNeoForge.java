@@ -6,7 +6,5 @@ import net.neoforged.fml.common.Mod;
 public class CoinsNeoForge {
 
     public CoinsNeoForge() {
-
-        CoinsContent.init();
     }
 }

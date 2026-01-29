@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "coinsje:copper_coin"
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

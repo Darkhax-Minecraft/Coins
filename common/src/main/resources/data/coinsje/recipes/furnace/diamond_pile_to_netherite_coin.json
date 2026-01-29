@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "coinsje:diamond_coin_pile"
-  },
-  "result": "coinsje:netherite_coin",
-  "experience": 0.7,
-  "cookingtime": 200
-}

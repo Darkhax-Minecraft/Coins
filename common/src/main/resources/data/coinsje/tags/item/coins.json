@@ -1,0 +1,22 @@
+{
+  "__comment": "This tag is for individual coin items.",
+  "replace": false,
+  "values": [
+    "coinsje:copper_coin",
+    "coinsje:iron_coin",
+    "coinsje:gold_coin",
+    "coinsje:diamond_coin",
+    "coinsje:netherite_coin",
+    "coinsje:zinc_coin",
+    "coinsje:brass_coin",
+    "coinsje:amethyst_coin",
+    "coinsje:redstone_coin",
+    "coinsje:lapis_coin",
+    "coinsje:emerald_coin",
+    "coinsje:ender_coin",
+    "coinsje:blazing_coin",
+    "coinsje:echo_coin",
+    "coinsje:prismarine_coin",
+    "coinsje:quartz_coin"
+  ]
+}

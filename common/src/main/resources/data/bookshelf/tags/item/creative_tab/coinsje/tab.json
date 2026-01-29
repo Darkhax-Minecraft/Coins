@@ -1,0 +1,39 @@
+{
+  "values": [
+    "coinsje:copper_coin",
+    "coinsje:copper_coin_pile",
+    "coinsje:iron_coin",
+    "coinsje:iron_coin_pile",
+    "coinsje:gold_coin",
+    "coinsje:gold_coin_pile",
+    "coinsje:diamond_coin",
+    "coinsje:diamond_coin_pile",
+    "coinsje:netherite_coin",
+    "coinsje:netherite_coin_pile",
+
+    "coinsje:coin_pattern",
+
+    "coinsje:zinc_coin",
+    "coinsje:zinc_coin_pile",
+    "coinsje:brass_coin",
+    "coinsje:brass_coin_pile",
+    "coinsje:amethyst_coin",
+    "coinsje:amethyst_coin_pile",
+    "coinsje:redstone_coin",
+    "coinsje:redstone_coin_pile",
+    "coinsje:lapis_coin",
+    "coinsje:lapis_coin_pile",
+    "coinsje:emerald_coin",
+    "coinsje:emerald_coin_pile",
+    "coinsje:ender_coin",
+    "coinsje:ender_coin_pile",
+    "coinsje:blazing_coin",
+    "coinsje:blazing_coin_pile",
+    "coinsje:echo_coin",
+    "coinsje:echo_coin_pile",
+    "coinsje:prismarine_coin",
+    "coinsje:prismarine_coin_pile",
+    "coinsje:quartz_coin",
+    "coinsje:quartz_coin_pile"
+  ]
+}

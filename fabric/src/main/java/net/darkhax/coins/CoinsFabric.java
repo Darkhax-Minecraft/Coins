@@ -6,7 +6,5 @@ public class CoinsFabric implements ModInitializer {
 
     @Override
     public void onInitialize() {
-
-        CoinsContent.init();
     }
 }

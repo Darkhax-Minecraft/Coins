@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "coinsje:copper_coin_pile"
-  },
-  "result": "coinsje:iron_coin",
-  "experience": 0.7,
-  "cookingtime": 200
-}

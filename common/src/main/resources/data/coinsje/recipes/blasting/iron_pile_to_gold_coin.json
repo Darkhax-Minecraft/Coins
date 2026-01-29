@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "coinsje:iron_coin_pile"
-  },
-  "result": "coinsje:gold_coin",
-  "experience": 0.7,
-  "cookingtime": 100
-}

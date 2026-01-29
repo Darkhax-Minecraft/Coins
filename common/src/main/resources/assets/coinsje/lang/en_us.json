@@ -1,6 +1,11 @@
 {
-  "itemGroup.coinsje.creative_tab": "Coins",
-  
+  "itemGroup.coinsje.tab": "Coins",
+
+  "tag.item.coinsje.coins": "Coins",
+  "tag.item.coinsje.coin_piles": "Coin Piles",
+  "tag.item.coinsje.coin_like": "Coin Items",
+  "tag.item.bookshelf.creative_tab.coinsje.tab": "CoinJE Item Tab",
+
   "item.coinsje.copper_coin": "Copper Coin",
   "item.coinsje.iron_coin": "Iron Coin",
   "item.coinsje.gold_coin": "Gold Coin",
