@@ -1,0 +1,41 @@
+{
+  "mod": {
+    "name": "Coins",
+    "group": "net.darkhax.coins",
+    "authors": [
+      "Darkhax"
+    ],
+    "id": "coinsje",
+    "license": "ARR",
+    "description": "Adds new types of coins.",
+    "repo": "https://github.com/Darkhax-Minecraft/coins",
+    "client": false
+  },
+  "curseforge": {
+    "slug": "coins-je",
+    "id": "377056"
+  },
+  "modrinth": {
+    "slug": "coins-je",
+    "id": "b8aQgkOD"
+  },
+  "dependencies": [
+    {
+      "name": "Bookshelf",
+      "type": "required",
+      "maven": {
+        "common": "net.darkhax.bookshelf:bookshelf-common-26.1.2:26.1.2.4",
+        "neoforge": "net.darkhax.bookshelf:bookshelf-neoforge-26.1.2:26.1.2.4",
+        "fabric": "net.darkhax.bookshelf:bookshelf-fabric-26.1.2:26.1.2.4"
+      },
+      "curseforge": {
+        "slug": "bookshelf",
+        "id": "228525"
+      },
+      "modrinth": {
+        "slug": "bookshelf-lib",
+        "id": "uy4Cnpcm"
+      }
+    }
+  ]
+}
