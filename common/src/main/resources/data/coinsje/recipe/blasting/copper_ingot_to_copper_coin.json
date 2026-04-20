@@ -1,8 +1,6 @@
 {
   "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "minecraft:copper_ingot"
-  },
+  "ingredient": "minecraft:copper_ingot",
   "result": {
     "id": "coinsje:copper_coin"
   },

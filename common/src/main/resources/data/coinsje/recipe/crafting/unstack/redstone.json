@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    "coinsje:redstone_coin_pile"
+  ],
+  "result": {
+    "id": "coinsje:redstone_coin",
+    "count": 9
+  }
+}

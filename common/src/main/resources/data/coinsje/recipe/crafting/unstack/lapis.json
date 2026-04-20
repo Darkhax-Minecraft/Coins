@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    "coinsje:lapis_coin_pile"
+  ],
+  "result": {
+    "id": "coinsje:lapis_coin",
+    "count": 9
+  }
+}

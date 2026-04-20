@@ -1,8 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "minecraft:gold_ingot"
-  },
+  "ingredient": "coinsje:diamond_coin_pile",
   "result": {
     "id": "coinsje:gold_coin"
   },

@@ -1,8 +1,6 @@
 {
   "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "coinsje:gold_coin_pile"
-  },
+  "ingredient": "coinsje:gold_coin_pile",
   "result": {
     "id": "coinsje:diamond_coin"
   },

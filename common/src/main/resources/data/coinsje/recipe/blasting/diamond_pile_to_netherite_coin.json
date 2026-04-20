@@ -1,8 +1,6 @@
 {
   "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "coinsje:diamond_coin_pile"
-  },
+  "ingredient": "coinsje:diamond_coin_pile",
   "result": {
     "id": "coinsje:netherite_coin"
   },

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    "coinsje:zinc_coin_pile"
+  ],
+  "result": {
+    "id": "coinsje:zinc_coin",
+    "count": 9
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    "coinsje:netherite_coin"
+  ],
+  "result": {
+    "id": "coinsje:diamond_coin",
+    "count": 9
+  }
+}

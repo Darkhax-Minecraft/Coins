@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    "coinsje:iron_coin_pile"
+  ],
+  "result": {
+    "id": "coinsje:iron_coin",
+    "count": 9
+  }
+}

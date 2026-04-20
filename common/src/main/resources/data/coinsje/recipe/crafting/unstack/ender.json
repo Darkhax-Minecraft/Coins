@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    "coinsje:ender_coin_pile"
+  ],
+  "result": {
+    "id": "coinsje:ender_coin",
+    "count": 9
+  }
+}

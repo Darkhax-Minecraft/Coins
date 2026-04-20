@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    "coinsje:echo_coin_pile"
+  ],
+  "result": {
+    "id": "coinsje:echo_coin",
+    "count": 9
+  }
+}

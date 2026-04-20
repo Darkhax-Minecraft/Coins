@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    "coinsje:quartz_coin_pile"
+  ],
+  "result": {
+    "id": "coinsje:quartz_coin",
+    "count": 9
+  }
+}

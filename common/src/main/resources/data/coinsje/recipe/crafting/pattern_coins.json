@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:paper"
-    },
-    {
-      "tag": "coinsje:coin_like"
-    }
+    "minecraft:paper",
+    "#coinsje:coin_like"
   ],
   "result": {
     "id": "coinsje:coin_pattern"

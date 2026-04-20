@@ -1,8 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "coinsje:copper_coin_pile"
-  },
+  "ingredient": "coinsje:copper_coin_pile",
   "result": {
     "id": "coinsje:iron_coin"
   },
