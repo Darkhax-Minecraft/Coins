@@ -27,9 +27,9 @@
         "id": "bookshelf"
       },
       "maven": {
-        "common": "net.darkhax.bookshelf:bookshelf-common-26.1.2:26.1.2.4",
-        "neoforge": "net.darkhax.bookshelf:bookshelf-neoforge-26.1.2:26.1.2.4",
-        "fabric": "net.darkhax.bookshelf:bookshelf-fabric-26.1.2:26.1.2.4"
+        "common": "net.darkhax.bookshelf:bookshelf-common-26.1.2:26.1.2.11",
+        "neoforge": "net.darkhax.bookshelf:bookshelf-neoforge-26.1.2:26.1.2.11",
+        "fabric": "net.darkhax.bookshelf:bookshelf-fabric-26.1.2:26.1.2.11"
       },
       "curseforge": {
         "slug": "bookshelf",
