@@ -4,9 +4,9 @@ issueTrackerURL = "https://github.com/Darkhax-Minecraft/coins/issues"
 
 [[mods]]
 modId = "coinsje"
-version = "26.1.2.0"
+version = "26.2.0.0"
 displayName = "Coins"
-updateJSONURL = "https://updates.blamejared.com/get?n=coinsje&gv=26.1.2&ml=neoforge"
+updateJSONURL = "https://updates.blamejared.com/get?n=coinsje&gv=26.2&ml=neoforge"
 displayURL = "https://www.curseforge.com/minecraft/mc-mods/coins-je"
 logoFile = "logo_coinsje.png"
 logoBlur = false
@@ -23,14 +23,14 @@ config = "coinsje.neoforge.mixins.json"
 [[dependencies.coinsje]]
 modId = "minecraft"
 type = "required"
-versionRange = "26.1"
+versionRange = "26.2"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.coinsje]]
 modId = "neoforge"
 type = "required"
-versionRange = "[26.1.0.1-beta,)"
+versionRange = "[26.2.0.1-beta,)"
 ordering = "NONE"
 side = "BOTH"
 
